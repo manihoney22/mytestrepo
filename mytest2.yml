@@ -1,0 +1,10 @@
+----
+- name: my test repo
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: install http
+      yum:
+        state: install
+        enable: yes
+
